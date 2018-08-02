@@ -1,0 +1,9 @@
+node_modules/
+public/
+modules/
+es6/
+coverage/
+.vscode
+.idea
+*.log
+*.js.map
