@@ -84,6 +84,7 @@ export default class ContextMenu extends AbstractMenu {
 
     registerHandlers = () => {
         document.addEventListener('mousedown', this.handleOutsideClick);
+        document.addEventListener('click', this.handleOutsideClick);
         document.addEventListener('touchstart', this.handleOutsideClick);
         document.addEventListener('scroll', this.handleHide);
         document.addEventListener('contextmenu', this.handleHide);
@@ -93,6 +94,7 @@ export default class ContextMenu extends AbstractMenu {
 
     unregisterHandlers = () => {
         document.removeEventListener('mousedown', this.handleOutsideClick);
+        document.removeEventListener('click', this.handleOutsideClick);
         document.removeEventListener('touchstart', this.handleOutsideClick);
         document.removeEventListener('scroll', this.handleHide);
         document.removeEventListener('contextmenu', this.handleHide);
