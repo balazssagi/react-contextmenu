@@ -16,7 +16,7 @@ export default class ContextMenuTrigger extends Component {
         holdToDisplay: PropTypes.number,
         posX: PropTypes.number,
         posY: PropTypes.number,
-        requiresAlt: PropTypes.boolean,
+        requiresAlt: PropTypes.bool,
         renderTag: PropTypes.oneOfType([
             PropTypes.node,
             PropTypes.func
